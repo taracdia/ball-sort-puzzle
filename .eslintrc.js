@@ -1,40 +1,49 @@
 module.exports = {
 	"env": {
 		"browser": true,
-		"es2021": true
+		"es2021": true,
 	},
 	"extends": [
 		"eslint:recommended",
 		"plugin:react/recommended",
-		"plugin:react/jsx-runtime"
 	],
-	"globals": {
-		"expect": "readonly",
-		"module": "readonly",
-		"test": "readonly"
-	},
 	"parserOptions": {
 		"ecmaFeatures": {
-			"jsx": true
+			"jsx": true,
 		},
-		"ecmaVersion": 11,
-		"sourceType": "module"
+		"ecmaVersion": 12,
+		"sourceType": "module",
 	},
 	"plugins": [
-		"react"
+		"react",
 	],
+	"globals": {
+		"React": "readonly",
+		"module": "readonly",
+	},
 	"rules": {
 		"indent": [
 			"error",
-			"tab"
+			"tab",
+			{"SwitchCase": 1,},
 		],
 		"quotes": [
 			"error",
-			"double"
+			"double",
 		],
 		"semi": [
 			"error",
-			"always"
-		]
-	}
+			"always",
+		],
+		"comma-dangle": ["error", {
+			"arrays": "always",
+			"objects": "always",
+			"imports": "always",
+			"exports": "always",
+			"functions": "never",
+		},],
+		"react/prop-types": [0,],
+		"key-spacing": ["error", ],
+		"no-multiple-empty-lines": ["error",],
+	},
 };
