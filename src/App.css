@@ -1,9 +1,61 @@
-#background {
+#tube-container {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+#container {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+#button-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+}
+
+#button-bar > button {
+  background-color: #fcba03;
+  border: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: medium;
+}
+
+#button-bar > button:hover {
+  background-color: #dba102;
+}
+
+#button-bar > button:disabled {
+  opacity: .5;
+}
+
+#game-over-message {
+  color: white;
+  position: absolute;
+  font-size: larger;
+  top: 5%;
 }
 
 html {
   background-color: black;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
 }

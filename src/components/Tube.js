@@ -4,18 +4,19 @@ import { Droppable, } from "react-beautiful-dnd";
 const getTubeStyle = isDraggingOver => ({
 	background: isDraggingOver ? "#404040" : "black",
 	padding: 8,
-	minWidth: 50,
+	minWidth: 55,
 	height: 200,
 	margin: 10,
-	borderLeftWidth: 10,
-	borderRightWidth: 10,
+	borderLeftWidth: 3,
+	borderRightWidth: 3,
 	borderTopWidth: 0,
-	borderBottomWidth: 10,
+	borderBottomWidth: 3,
 	borderColor: "white",
 	borderStyle: "solid",
 	display: "flex",
 	flexDirection: "column",
 	justifyContent: "end",
+	borderRadius: 5,
 });
 
 export default function Tube({tube, index,}){

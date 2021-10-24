@@ -47,4 +47,9 @@ module.exports = {
 		"key-spacing": ["error", ],
 		"no-multiple-empty-lines": ["error",],
 	},
+	"settings": {
+		"react": {
+			"version": "detect",
+		},
+	},
 };
